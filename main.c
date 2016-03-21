@@ -106,14 +106,6 @@ void check(FILE *file)
 	free(buf);
 } 
 
-Matrix* append(Matrix* matrix, int rows, int cols) // Сделать
-{
-	return 0;
-}
-	
-	
-
-
 int main(int argc, char* argv[])
 {
 	//TODO
