@@ -6,16 +6,15 @@
 
 Matrix* multiply(Matrix *matrix1, Matrix *matrix2)
 {
-	int M1_rows = get_rows(matrix1);
-	int M1_cols = get_cols(matrix1);
-	int M2_rows = get_rows(matrix2);
-	int M2_cols = get_cols(matrix2);
-
-	if (M1_cols != M2_rows) 
+	if (matrix1->col != matrix2->row) 
 	{
 		return NULL;
 	}
 
+	int M1_rows = get_rows(matrix1);
+	int M1_cols = get_cols(matrix1);
+	int M2_rows = get_rows(matrix2);
+	int M2_cols = get_cols(matrix2);
 
 	Matrix *matrix3;
 	matrix3 = create_matrix(M1_rows, M2_cols);
